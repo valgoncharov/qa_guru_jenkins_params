@@ -3,6 +3,10 @@ plugins {
     id 'io.qameta.allure' version '2.10.0'
 }
 
+repositories {
+    mavenCentral()
+}
+
 group 'org.example'
 version '1.0'
 
@@ -20,15 +24,13 @@ allure {
     }
 }
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.9.0',
-            'com.codeborne:selenide:6.7.2',
+            'com.codeborne:selenide:6.9.0',
             'io.github.bonigarcia:webdrivermanager:5.3.0',
+            'org.slf4j:slf4j-simple:2.0.3',
             'io.qameta.allure:allure-selenide:2.19.0'
     )
 
