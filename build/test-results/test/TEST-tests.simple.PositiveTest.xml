@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tests.simple.PositiveTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-11-04T18:04:48" hostname="DESKTOP-M6DLVH0" time="0.11">
-  <properties/>
-  <testcase name="simpleTest01()" classname="tests.simple.PositiveTest" time="0.11"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

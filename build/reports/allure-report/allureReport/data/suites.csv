@@ -1,4 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Fri Nov 04 20:16:08 MSK 2022","Fri Nov 04 20:16:08 MSK 2022","1","","tests.simple.PositiveTest","","tests.simple.PositiveTest","simpleTest02","simpleTest02()",""
-"passed","Fri Nov 04 20:15:40 MSK 2022","Fri Nov 04 20:16:08 MSK 2022","28215","","tests.demoqa.RegistrationFormTest","","tests.demoqa.RegistrationFormTest","practiceFormTest","practiceFormTest()",""
-"passed","Fri Nov 04 21:04:48 MSK 2022","Fri Nov 04 21:04:48 MSK 2022","34","","tests.simple.PositiveTest","","tests.simple.PositiveTest","simpleTest01","simpleTest01()",""
