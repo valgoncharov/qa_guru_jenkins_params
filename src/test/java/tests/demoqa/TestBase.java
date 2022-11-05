@@ -15,6 +15,8 @@ public class TestBase {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("browserVersion", "100.0");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
 
@@ -27,8 +29,8 @@ public class TestBase {
             Configuration.remote = Property.remoteUrl();
         }
 
-        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
     }
 
 
