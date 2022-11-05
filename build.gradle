@@ -8,7 +8,7 @@ repositories {
 }
 
 def allureVersion = "2.19.0",
-    slf4jVersion = "1.7.32"
+    slf4jVersion = '2.0.3'
 
 allure {
     report {
@@ -26,7 +26,7 @@ allure {
 
 dependencies {
     testImplementation(
-            "com.codeborne:selenide:6.7.2",
+            'com.codeborne:selenide:6.9.0',
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.junit.jupiter:junit-jupiter:5.9.0",
             "org.slf4j:slf4j-simple:$slf4jVersion"
@@ -42,23 +42,6 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
-    }
-}
-
-task one_property(type: Test){
-    useJUnitPlatform {
-        includeTags "one_property_test"
-    }
-}
-
-task many_property(type: Test){
-    useJUnitPlatform {
-        includeTags "many_property_test"
-    }
-}
-task hello(type: Test){
-    useJUnitPlatform {
-        includeTags "hello"
     }
 }
 
