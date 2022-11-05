@@ -1,15 +1,18 @@
 package tests.properties;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class SystemPropertiesTests {
+    @Disabled
     @Test
     void simplePropertyTest00(){
         String browserName = System.getProperty("browser");
         System.out.println(browserName);
     }
 
+    @Disabled
     @Test
     void simplePropertyTest01(){
         System.setProperty("browser", "opera");
@@ -17,6 +20,7 @@ public class SystemPropertiesTests {
         System.out.println(browserName);//opera
     }
 
+    @Disabled
     @Test
     void simplePropertyTest02(){
         String browserName = System.getProperty("browser", "firefox");
