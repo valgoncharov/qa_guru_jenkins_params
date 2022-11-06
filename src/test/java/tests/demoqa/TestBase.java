@@ -29,8 +29,8 @@ public class TestBase {
             Configuration.remote = Property.remoteUrl();
         }
 
-        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-        System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
+        //Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+        //System.setProperty("webdriver.chrome.driver", "C:\\chromedriver\\chromedriver.exe");
     }
 
 
